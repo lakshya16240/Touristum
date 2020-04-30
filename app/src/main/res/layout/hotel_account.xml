@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/ic_people_black_24dp"
+            android:layout_marginLeft="150sp"
+            android:id="@+id/Account_image">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotelID_hotel"
+            android:textSize="20sp"
+            android:paddingTop="5sp"
+            android:layout_marginLeft="150sp"
+            android:text="HotelID" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CityID_hotel"
+            android:textSize="20sp"
+            android:paddingTop="5sp"
+            android:layout_marginLeft="150sp"
+            android:text="CityID" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationID_hotel"
+            android:textSize="20sp"
+            android:paddingTop="5sp"
+            android:layout_marginLeft="150sp"
+            android:text="LocationID" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/HotelName"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:text="HotelName  :  " />
+            <EditText
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/hotel_name_account"
+                android:layout_marginLeft="20sp"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_account"
+                android:src="@drawable/edit"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rooms"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:text="AvailableRooms  :  " />
+            <EditText
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/hotel_rooms"
+                android:layout_marginLeft="20sp"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_hotel_rooms"
+                android:src="@drawable/edit"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:text="Rating  :  " />
+            <RatingBar
+                android:id="@+id/ratingBar_hotel"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="5"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_availability"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="@+id/tv_availability"
+                app:layout_constraintTop_toTopOf="@+id/tv_city" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginLeft="150sp"
+            android:layout_marginTop="100sp"
+            android:id="@+id/logout_hotel"
+            />
+    </LinearLayout>
+</LinearLayout>

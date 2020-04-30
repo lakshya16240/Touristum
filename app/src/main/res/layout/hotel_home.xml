@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/ll_reviewHotel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="16dp">
+
+    <EditText
+        android:id="@+id/et_filterHotel"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/border"
+        android:hint="Filter Bookings"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/et_searchHotel"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/border"
+        android:hint="Search Bookings"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="18dp" />
+
+</LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>

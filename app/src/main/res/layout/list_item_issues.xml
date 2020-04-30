@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_issueID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="176dp"
+            android:text="IssueID : "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_employeeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="EmployeeID : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_issueID" />
+
+        <TextView
+            android:id="@+id/tv_issueType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:text="Type : "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_employeeID" />
+
+        <TextView
+            android:id="@+id/tv_dateOfIssue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Issue Date : "
+            app:layout_constraintStart_toStartOf="@+id/tv_employeeID"
+            app:layout_constraintTop_toBottomOf="@+id/tv_employeeID" />
+
+        <TextView
+            android:id="@+id/tv_tentativeResolveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentative Date : "
+            app:layout_constraintEnd_toEndOf="@+id/tv_issueType"
+            app:layout_constraintTop_toTopOf="@+id/tv_dateOfIssue" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Status : "
+            app:layout_constraintStart_toStartOf="@+id/tv_dateOfIssue"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dateOfIssue" />
+
+        <TextView
+            android:id="@+id/et_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+            android:gravity="top|left"
+            android:text="Write your review here"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:maxLines="10"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+        <TextView
+            android:id="@+id/tv_clientID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/tv_tentativeResolveDate"
+            app:layout_constraintTop_toTopOf="@+id/tv_status" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
